@@ -1,0 +1,30 @@
+{
+  "root": "apps/nx-react-microfrontend-proxy-demo-e2e",
+  "sourceRoot": "apps/nx-react-microfrontend-proxy-demo-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/nx-react-microfrontend-proxy-demo-e2e/cypress.json",
+        "devServerTarget": "nx-react-microfrontend-proxy-demo:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "nx-react-microfrontend-proxy-demo:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "apps/nx-react-microfrontend-proxy-demo-e2e/**/*.{js,ts}"
+        ]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["nx-react-microfrontend-proxy-demo"]
+}
