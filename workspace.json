@@ -2,6 +2,8 @@
   "version": 2,
   "projects": {
     "nx-react-microfrontend-proxy-demo": "apps/nx-react-microfrontend-proxy-demo",
-    "nx-react-microfrontend-proxy-demo-e2e": "apps/nx-react-microfrontend-proxy-demo-e2e"
+    "nx-react-microfrontend-proxy-demo-e2e": "apps/nx-react-microfrontend-proxy-demo-e2e",
+    "profile": "apps/profile",
+    "profile-e2e": "apps/profile-e2e"
   }
 }
