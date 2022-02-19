@@ -15,9 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-react-microfrontend-proxy-demo/component-library": [
-        "libs/component-library/src/index.ts"
-      ]
+      "@company/component-library": ["libs/component-library/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

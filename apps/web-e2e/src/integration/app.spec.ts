@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('nx-react-microfrontend-proxy-demo', () => {
+describe('web', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
@@ -8,6 +8,6 @@ describe('nx-react-microfrontend-proxy-demo', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome nx-react-microfrontend-proxy-demo');
+    getGreeting().contains('Welcome web');
   });
 });
