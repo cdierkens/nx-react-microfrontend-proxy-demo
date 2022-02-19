@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "component-library": "libs/component-library",
     "nx-react-microfrontend-proxy-demo": "apps/nx-react-microfrontend-proxy-demo",
     "nx-react-microfrontend-proxy-demo-e2e": "apps/nx-react-microfrontend-proxy-demo-e2e",
     "profile": "apps/profile",
