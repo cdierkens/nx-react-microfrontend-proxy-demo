@@ -11,7 +11,7 @@
         "compiler": "swc",
         "outputPath": "dist/apps/profile",
         "index": "apps/profile/src/index.html",
-        "baseHref": "/",
+        "deployUrl": "/profile",
         "main": "apps/profile/src/main.tsx",
         "polyfills": "apps/profile/src/polyfills.ts",
         "tsConfig": "apps/profile/tsconfig.app.json",
@@ -41,7 +41,8 @@
       "executor": "@nrwl/web:dev-server",
       "options": {
         "buildTarget": "profile:build",
-        "hmr": true
+        "hmr": true,
+        "port": 4201
       },
       "configurations": {
         "production": {

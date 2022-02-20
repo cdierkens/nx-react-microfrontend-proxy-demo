@@ -41,7 +41,9 @@
       "executor": "@nrwl/web:dev-server",
       "options": {
         "buildTarget": "web:build",
-        "hmr": true
+        "hmr": true,
+        "proxyConfig": "apps/web/proxy.config.js",
+        "open": true
       },
       "configurations": {
         "production": {
